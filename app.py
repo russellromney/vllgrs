@@ -24,12 +24,12 @@ app = dash.Dash(
 )
 app.title = 'vllgrs'
 
-uri = "mongodb://localhost:27017"
-mongo = PyMongo(
-    server,
-    uri
-)
-db = mongo.cx.vllgrs
+#uri = "mongodb://localhost:27017"
+#mongo = PyMongo(
+#    server,
+#    uri
+#)
+#db = mongo.cx.vllgrs
 
 @server.route("/")
 def MyDashApp():
